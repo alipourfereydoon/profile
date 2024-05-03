@@ -12,4 +12,7 @@ class user extends Model
         'name','email','password'
 
     ];
+    public function address(){
+        return $this->hasOne(address::class,'user_id');
+    }
 }

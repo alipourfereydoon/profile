@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AMY - Portfolio</title>
+  <title>ali- Portfolio</title>
   <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="{{ asset('css/opensource.css') }}">
 </head>
@@ -49,7 +49,7 @@
   <section id="hero">
     <div class="container">
       <div class="left">
-        <p class="subheading">I'm Ali Pourfereydoon</p>
+        <p class="subheading"> I'm Ali Pourfereydoon </p>
         <h2 class="heading">
           <div class="wrapper"><span>codes</span></div>
           <div class="wrapper"><span>with</span></div>

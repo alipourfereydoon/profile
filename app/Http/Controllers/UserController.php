@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Models\user;
-// use app\Models\user;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
@@ -32,12 +29,18 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-       user::create($request->all());
+    //    user::create($request->all());
     //    $message = new user();
     //    $message->name = $request->input('name');
     //    $message->email = $request->input('email');
     //    $message->password=$request->input('password');
     //    $message->save();
+    $filename=time().'.'.$request->image->Extension();
+    $request->image->move(public_path('uploads'),$filename);
+
+
+    // post::create($request->all());
+    return redirect()->route('main')->with('success','record create seccessfully');
     }
 
     /**

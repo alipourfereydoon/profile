@@ -17,7 +17,7 @@
     </head>
     <body>
   <p>
-
+@include('layouts.partials.error')
 
 </p>
     </body>

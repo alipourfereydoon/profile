@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Foundation\Auth\User;
+use App\Models\address;
 
 class homecontroller extends Controller
 {
@@ -120,8 +121,36 @@ class homecontroller extends Controller
 
     // $user=User::where('id',6);
     // dd($user->email);
+    // $address=address::find(1);
+    // $user=user::find(1);
+    // dd($address->address);
+    // dd($user->address);
 
-    return view('welcome');
+
+
+
+
+    // $messages=[
+    //     'errors'=>['something went wrong'],
+    //     'messages'=>['creat seccessfully']
+    // ];
+
+    // $messagebag=new \Illuminate\Support\MessageBag($messages);
+    // if ($messagebag->has('errors')) {
+    //     dd($messagebag->get('errors'));
+    // }
+    // return view('welcome');
+
+
+    // $messages=[
+    //     'errors'=>['something wrong'],
+    //     'messages'=>['connected seccecfully']
+    // ];
+
+    // $messagebag=new \Illuminate\Support\MessageBag($messages);
+    // return view('welcome')->withErrors($messagebag);
+
+    return view('welcome')->witherrors(['errors'=>'something wrong' , 'messages'=>'connected']);
 
 
 

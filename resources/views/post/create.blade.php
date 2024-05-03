@@ -13,7 +13,7 @@
 </div>
 
 @include('layouts.partials.error')
-<form action="{{route('store')}}" method="head" enctype="multipart/form-data" class="border p-5">
+<form action="{{route('store')}}" method="post" enctype="multipart/form-data" class="border p-5">
 @csrf
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -29,11 +29,11 @@
             </div>
             <strong>عکس:</strong>
 
-             {{--  <div class="col-md-12 p-3 mt-4">
+               <div class="col-md-12 p-3 mt-4">
                 <input type="file" class="custom-file-input" id="customFile" name="image">
                 <label class="custom-file-label" for="customFile"></label>
                     </div>
-                    <strong>pdf:</strong>  --}}
+                    <strong>pdf:</strong>
 
              {{--  <div class="col-md-12 p-3 mt-4">
                 <input type="file" class="custom-file-input" name="pdf">

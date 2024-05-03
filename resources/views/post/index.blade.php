@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-{{--  {{ dd(request()->path()) }}  --}}
+{{request()->fullurl()}}
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left m-3">
