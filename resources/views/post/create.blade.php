@@ -21,19 +21,20 @@
                 <strong>عنوان:</strong>
                 <input type="text" name="title" class="form-control" placeholder="">
             </div>
-        </div>
+        {{--  </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>نویسنده:</strong>
-                <input type="text" name="user_id" class="form-control" placeholder="">
-            </div>
-            <strong>عکس:</strong>
+                <input type="text" name="user_id" class="form-control bg-secondary" placeholder="">
+            </div>  --}}
 
+            <strong>عکس:</strong>
+{{--
                <div class="col-md-12 p-3 mt-4">
-                <input type="file" class="custom-file-input" id="customFile" name="image">
+                <input type="file" class="custom-file-input "id="customFile" name="image">
                 <label class="custom-file-label" for="customFile"></label>
                     </div>
-                    <strong>pdf:</strong>
+                    <strong>pdf:</strong>  --}}
 
              {{--  <div class="col-md-12 p-3 mt-4">
                 <input type="file" class="custom-file-input" name="pdf">

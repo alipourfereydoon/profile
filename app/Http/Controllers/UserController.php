@@ -1,8 +1,12 @@
 <?php
 namespace App\Http\Controllers;
+use App\Http\Requests\PostStoreRequest;
 use App\Models\user;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Validator;
+use App\models\post;
+
 
 class UserController extends Controller
 {
@@ -27,7 +31,7 @@ class UserController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(PostStoreRequest $request)
     {
     //    user::create($request->all());
     //    $message = new user();
@@ -35,8 +39,8 @@ class UserController extends Controller
     //    $message->email = $request->input('email');
     //    $message->password=$request->input('password');
     //    $message->save();
-    $filename=time().'.'.$request->image->Extension();
-    $request->image->move(public_path('uploads'),$filename);
+    // $filename=time().'.'.$request->image->Extension();
+    // $request->image->move(public_path('uploads'),$filename);
 
 
     // post::create($request->all());
